@@ -1,4 +1,5 @@
 
+import java.io.Console;
 import java.util.*; /*Import all to avoid non-defined method implementations for Collections*/
 class Main {
 
@@ -62,6 +63,10 @@ class Main {
 			case "6":
 				animal.new_Animal();
 				break;
+			
+			case "7":
+				animal.delete_animal();
+				break;
 			case "8":
 				keeper.keeper_details();
 				System.out.println("The keeper has been assigned to the cage.");
@@ -74,7 +79,9 @@ class Main {
 				d.exit();
 			}
 	}while (!menu.equals("10"));
-		}
 		
-	
+	}
+		
+
+
 	}
